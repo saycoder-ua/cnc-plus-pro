@@ -44,8 +44,8 @@
 
 1. **Клонируйте репозиторий**:
    ```bash
-   git clone https://github.com/your-username/cnc-calc-pro.git
-   cd cnc-calc-pro
+   git clone https://github.com/your-username/cnc-plus-pro.git
+   cd cnc-plus-pro
    ```
 
 2. **Установите зависимости**:
