@@ -1,340 +1,562 @@
 <div align="center">
 
-⚙️ CNC Plus Pro v1.0
+# ⚙️ CNC Plus Pro
 
-Профессиональная система мониторинга станков ЧПУ
+### Smart Manufacturing Platform for CNC Workshops & Production Facilities
 
-Цеховая PWA-система: мониторинг ЧПУ, табель, G-code студия, AI-распознавание чертежей
+Production-grade PWA platform for CNC machine monitoring, OEE analytics, workforce management, AI-powered drawing recognition, G-code development, and digital shop-floor operations.
+
+<p align="center">
+  <img src="docs/screenshots.png
+</p>
+
+<br>
+
+![React](https://img.shields.io/badge/React-19-61DAeact&logoColor=white
+![TypeScript](https://img.shields.io/badge/TypeScript-5=typescript&logoColor=white
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js&hite
+![Firebase](https://img.shields.io/badge/Firebase8?logo=firebase&logoColor=black
+![PWA](https://img.shields.io/badge/PWA5A0FC8
+![AI](https://img.shields.io/badge/AI-Gemini%20%7C%20Claude%20OpenAI-success
+![License](httpslds.io/badge/License-Private-red
+
+---
+
+### 🏭 Monitor • Analyze • Automate • Optimize
+
+Built for CNC operators, setup technicians, production managers, manufacturing engineers, and machine shops.
 
 </div>
 
-📋 Содержание
+---
 
-- Возможности
+# 📑 Table of Contents
 
-- Стек технологий
+- [-overview
+- #-key-features
+- [-screenshots
+- [Technologyy-stack
+- [-ai-agents
+- [Architecture](#-architecture#-quick-start
+- [Environment Configuration](#-environment #-firebase-integration
+- [API Referencee
+- #-security
+- #-roadmap
+- [License](#---
 
-- Быстрый старт (Windows)
+# 🚀 Overview
 
-- Ручная установка
+CNC Plus Pro is a modern digital manufacturing platform that combines:
 
-- Конфигурация .env
+- CNC machine monitoring
+- OEE and KPI analytics
+- Workforce management
+- Shift scheduling
+- Tool management
+- AI-powered engineering assistance
+- Drawing recognition
+- G-code generation
+- Digital production journals
+- Cloud synchronization
 
-- Скрипты запуска
+The system operates as a Progressive Web Application (PWA), allowing deployment on:
 
-- Архитектура
+- Industrial touch panels
+- Shop-floor terminals
+- Desktop workstations
+- Tablets
+- Smartphones
 
-- Модульная система
+---
 
-- Firebase
+# ✨ Key Features
 
-- API Endpoints
+## 🖥 CNC Machine Monitoring
 
-🚀 Возможности
+- Real-time machine status
+- Production timers
+- Downtime tracking
+- Machine utilization metrics
+- OEE calculations
+- Shift-based performance monitoring
 
-Модуль
-Описание
+## 📊 Manufacturing Analytics
 
-🖥️ Мониторинг станков
-Карточки ЧПУ с таймерами, статусами, паузами и OEE в реальном времени
+- Overall Equipment Effectiveness (OEE)
+- KPI dashboards
+- Shift comparison reports
+- Productivity statistics
+- Downtime analysis
 
-📊 Аналитика
-OEE, KPI, сравнение смен, графики производительности (Recharts)
+## 📅 Shift & Workforce Management
 
-📅 Табель смен
-График сменности, подсчёт часов, тарифные ставки, сдельная оплата
+- Shift scheduling
+- Attendance tracking
+- Working hours calculation
+- Salary calculation
+- Piecework production accounting
 
-🔧 Менеджер инструмента
-Учёт СОЖ, наладок, расхода инструмента, закупки
+## 🔧 Tool Management
 
-📐 Чертежи / ЕСКД
-Просмотр, AI-распознавание чертежей через Gemini Vision
+- Tool inventory
+- Tool wear tracking
+- Coolant monitoring
+- Maintenance planning
+- Purchasing records
 
-💻 G-code Studio
-Редактор, визуализатор траектории, генератор УП, симулятор
+## 📐 Drawing Management
 
-📝 Журналы
-Брак, простои, события, сдача смены с цифровой подписью
+- Engineering drawing storage
+- PDF support
+- Image support
+- AI-assisted dimension extraction
+- Technical requirement recognition
 
-🤖 AI-агенты
-Настраиваемые нейросетевые субагенты (Gemini / Claude / OpenAI)
+## 💻 G-Code Studio
 
-📲 Telegram-бот
-Оперативные уведомления, бегущая строка, чат цеха
+- Advanced editor
+- Syntax highlighting
+- Toolpath visualization
+- G-code simulation
+- AI-assisted programming
 
-☁️ Синхронизация
-Firebase Firestore, Google Drive, Cloudflare R2/D1
+## 📝 Production Journals
 
-🔐 Авторизация
-Firebase Auth (email/пароль), роли: admin / operator / viewer
+- Downtime logs
+- Defect tracking
+- Shift handovers
+- Digital signatures
+- Operator notes
 
-🛠 Стек технологий
+---
 
-Frontend:
+# 📸 Screenshots
 
-- React 19 + TypeScript 5.8
+## CNC Monitoring Dashboard
 
-- Tailwind CSS 4.x (utility-first)
+Real-time machine tracking and production overview.
 
-- Vite 6.x (сборка + dev-сервер)
+docs/screenshots/dashboard.png
 
-- Recharts (графики), jsPDF (экспорт), JSZip, QR-код
+---
 
-Backend:
+## Analytics & OEE
 
-- Node.js + Express (TypeScript через tsx)
+Manufacturing performance reports and KPI analysis.
 
-- Встроенный LRU-кэш (Redis-совместимая семантика, без внешних зависимостей)
+docs/screenshots/analytics.png
 
-- Gemini API (@google/genai) — распознавание чертежей, генерация G-кода
+---
 
-- Anthropic Claude API + OpenAI API (субагенты)
+## Shift Management
 
-Хранилище:
+Scheduling, attendance tracking, and workforce planning.
 
-- IndexedDB (локальное) — основное хранилище данных
+docs/screenshots/shifts.png
 
-- Firebase Firestore — облачная синхронизация между устройствами
+---
 
-- Firebase Auth — аутентификация пользователей
+## G-Code Studio
 
-- Google Drive / Cloudflare R2 — резервные копии
+Editor, simulator, and AI-assisted code generation.
 
-⚡ Быстрый старт (Windows)
+docs/screenshots/gcode-studio.png
 
-Требования: Node.js 18+ (скачать)
+---
 
-1. Клонировать репозиторий
+## AI Drawing Recognition
 
+Automated extraction of dimensions and manufacturing information.
+
+docs/screenshots/drawing-ai.png
+
+---
+
+## AI Agents
+
+Production-focused intelligent assistants.
+
+docs/screenshots/ai-agents.png
+
+---
+
+# 🛠 Technology Stack
+
+## Frontend
+
+| Technology | Purpose |
+|------------|----------|
+| React 19 | UI Framework |
+| TypeScript 5.8 | Strong Typing |
+| Tailwind CSS 4 | Styling |
+| Vite 6 | Development & Build |
+| Recharts | Analytics |
+| jsPDF | PDF Export |
+| JSZip | Archive Generation |
+
+---
+
+## Backend
+
+| Technology | Purpose |
+|------------|----------|
+| Node.js | Runtime |
+| Express | API Layer |
+| TypeScript | Server Logic |
+| LRU Cache | Performance Optimization |
+
+---
+
+## Cloud Services
+
+| Service | Purpose |
+|----------|---------|
+| Firebase Auth | Authentication |
+| Firestore | Synchronization |
+| Google Drive | Backup |
+| Cloudflare R2 | Storage |
+| Cloudflare D1 | Database |
+
+---
+
+# 🤖 AI Agents
+
+CNC Plus Pro includes a configurable AI Agent Platform.
+
+## Available Agents
+
+### CNC Programmer Agent
+
+Capabilities:
+
+- Generate CNC programs
+- Optimize toolpaths
+- Validate machining strategies
+- Improve cycle times
+
+---
+
+### Manufacturing Engineer Agent
+
+Capabilities:
+
+- Process planning
+- Fixture recommendations
+- Tool selection assistance
+- Technology calculations
+
+---
+
+### Drawing Recognition Agent
+
+Capabilities:
+
+- Interpret technical drawings
+- Extract dimensions
+- Detect tolerances
+- Prepare manufacturing summaries
+
+---
+
+### Shop-Floor Assistant
+
+Capabilities:
+
+- Operator support
+- Shift documentation
+- Troubleshooting guidance
+- Production reporting
+
+---
+
+### Multi-Provider AI Support
+
+Supported providers:
+
+- Google Gemini
+- Gemini Vision
+- Anthropic Claude
+- OpenAI
+
+---
+
+# 🏗 Architecture
+
+```text
+┌─────────────────────────────────────┐
+│            React PWA UI             │
+└────────────────┬────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────────┐
+│          App Context Layer          │
+└────────────────┬────────────────────┘
+                 │
+ ┌───────────────┼─────────────────┐
+ ▼               ▼                 ▼
+
+IndexedDB    Firebase        AI Services
+Local DB     Firestore       Gemini/Claude/OpenAI
+
+ ▼               ▼                 ▼
+
+Storage      Authentication   Drawing Analysis
+Caching      User Roles       G-Code Generation
+Offline      Sync Engine      AI Agents
+```
+
+---
+
+# 🧩 Modules
+
+## Production Modules
+
+| Module | Description |
+|----------|------------|
+| machines | CNC Monitoring |
+| tools | Tool Management |
+| drawings | Engineering Drawings |
+| files | Production Files |
+| gcode | G-Code Studio |
+| calendar | Shift Calendar |
+| defects | Defect Management |
+| stats | Analytics |
+| log | Production Journals |
+| customTemplate | Custom Extensions |
+
+---
+
+## Settings Modules
+
+| Module | Purpose |
+|----------|----------|
+| settings_telegram | Notifications |
+| settings_integrations | Integrations |
+| settings_notifications | Alerts |
+| settings_salary | Payroll |
+| settings_shifts | Shift Management |
+| settings_appearance | UI |
+| settings_ai_agents | AI Configuration |
+| settings_backup | Backups |
+| settings_gdrive | Google Drive |
+| settings_cloudflare | Cloudflare |
+
+---
+
+# ⚡ Quick Start
+
+## Clone Repository
+
+```bash
 git clone https://github.com/YOUR_USERNAME/cnc-plus-pro.git
 cd cnc-plus-pro
+```
 
-2. Установить зависимости
+## Install
 
+```bash
 install.bat
+```
 
-Скрипт проверит Node.js, создаст .env из шаблона и выполнит npm install.
+Or manually:
 
-3. Указать API-ключи
-
-Откройте файл .env и заполните:
-
-GEMINI_API_KEY=ваш_ключ_от_google_ai_studio
-
-4. Запустить приложение
-
-start-dev.bat
-
-Откройте браузер: http://localhost:3000
-
-🔧 Ручная установка
-
+```bash
 npm install
 copy .env.example .env
-# отредактируйте .env
+```
 
-npm run dev          # режим разработки
-# или
-npm run build && npm run start   # production
+---
 
-🔑 Конфигурация .env
+## Configure
 
-# Обязательно: Gemini AI (распознавание чертежей, G-код)
-# Получить: https://aistudio.google.com/app/apikey
-GEMINI_API_KEY=AIzaSy...
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
 
-# Опционально: Anthropic Claude (AI-субагенты)
-CLAUDE_API_KEY=sk-ant-...
+---
 
-# Опционально: OpenAI (AI-субагенты)
-OPENAI_API_KEY=sk-...
+## Run
 
-# URL приложения (для OAuth callback)
+```bash
+start-dev.bat
+```
+
+Application:
+
+```text
+http://localhost:3000
+```
+
+---
+
+# 🔑 Environment Configuration
+
+```env
+# AI PROVIDERS
+
+GEMINI_API_KEY=
+CLAUDE_API_KEY=
+OPENAI_API_KEY=
+
+# APPLICATION
+
+PORT=3000
 APP_URL=http://localhost:3000
 
-# Порт сервера (по умолчанию 3000)
-PORT=3000
+# FIREBASE
 
-Без GEMINI_API_KEY — AI-функции недоступны. Все остальные работают без ключей.
+FIREBASE_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_PROJECT_ID=
+FIREBASE_STORAGE_BUCKET=
+FIREBASE_APP_ID=
+```
 
-📜 Скрипты запуска
+---
 
-Файл
-Описание
+# 📜 Scripts
 
-install.bat
-Первоначальная установка: проверка Node.js, создание .env, npm install
+```bash
+npm run dev
+```
 
-start-dev.bat
-Режим разработки с hot-reload (Vite + tsx)
+Development mode.
 
-start-prod.bat
-Production: автосборка если нет dist/, затем запуск
+```bash
+npm run build
+```
 
-build.bat
-Только сборка dist/ (без запуска)
+Production build.
 
-npm скрипты
+```bash
+npm run start
+```
 
-npm run dev      # Dev-сервер (tsx server.ts + Vite middleware)
-npm run build    # Production build (Vite + esbuild)
-npm run start    # Запуск production (node dist/server.cjs)
-npm run preview  # Предпросмотр Vite build
-npm run lint     # TypeScript type check
-npm run clean    # Удалить dist/
+Run production server.
 
-🏗 Архитектура
+```bash
+npm run lint
+```
 
-cnc-plus-pro/
-├── src/
-│   ├── App.tsx                    # Корневой компонент, маршрутизация вьюх
-│   ├── main.tsx                   # Точка входа, ServiceWorker
-│   ├── types.ts                   # Глобальные TypeScript-типы
-│   ├── firebase.ts                # Firebase инициализация
-│   ├── index.css                  # Tailwind + кастомные стили
-│   ├── context/
-│   │   ├── AppContext.tsx          # Главный стейт-менеджер (~4500 строк)
-│   │   └── AuthContext.tsx         # Firebase Auth провайдер
-│   ├── components/                # UI-компоненты (~30 файлов)
-│   │   ├── MachineCard.tsx         # Карточка станка ЧПУ
-│   │   ├── GCodeStudioView.tsx     # G-code редактор и визуализатор
-│   │   ├── AnalyticsView.tsx       # OEE / аналитика
-│   │   ├── SettingsView.tsx        # Настройки (все модули)
-│   │   └── Modals/                 # Диалоговые окна
-│   ├── modules/                   # Плагин-система
-│   │   ├── ModuleManager.tsx       # Загрузчик модулей
-│   │   ├── moduleRegistry.ts       # Реестр модулей
-│   │   └── core/                   # Встроенные модули
-│   │       ├── machines/ tools/ drawings/ gcode/ calendar/
-│   │       ├── defects/ stats/ log/ files/ customTemplate/
-│   │       └── settings_*/
-│   ├── db/
-│   │   ├── indexedDB.ts            # IndexedDB слой (основное хранилище)
-│   │   └── fs/fsTree.ts            # Виртуальная файловая система
-│   ├── services/
-│   │   └── firebaseSync.ts         # Firebase Firestore синхронизация
-│   └── utils/
-│       ├── AgentManager.ts         # AI-субагенты (Gemini/Claude/OpenAI)
-│       ├── gcodeGenerator.ts       # Алгоритмическая генерация G-кода
-│       ├── cadRedrawEngine.ts      # CAD движок (Canvas-рендеринг)
-│       ├── geminiModelChecker.ts   # Проверка доступности модели Gemini
-│       ├── telegram.ts             # Telegram Bot API интеграция
-│       ├── pdfExport.ts            # jsPDF экспорт отчётов
-│       └── csvExport.ts            # CSV экспорт данных
-├── server.ts                      # Express-сервер + AI API прокси
-├── public/
-│   ├── sw.js                      # Service Worker (PWA offline)
-│   ├── manifest.json              # PWA манифест
-│   └── icon.svg                   # Иконка приложения
-├── scripts/
-│   ├── pack_dop_zip.py            # Упаковка модулей в dop.zip
-│   └── setup_settings_modules.py  # Генератор модулей настроек
-├── firestore.rules                # Firestore правила безопасности
-├── firebase-applet-config.json    # Firebase конфигурация
-├── vite.config.ts
-├── tsconfig.json
-├── package.json
-├── .env.example
-├── install.bat                    # Первоначальная установка (Windows)
-├── start-dev.bat                  # Запуск dev-режима (Windows)
-├── start-prod.bat                 # Запуск production (Windows)
-└── build.bat                      # Сборка production (Windows)
+TypeScript validation.
 
-🧩 Модульная система
+```bash
+npm run clean
+```
 
-Каждый модуль — папка в src/modules/core/ со структурой:
+Clean build artifacts.
 
-src/modules/core/machines/
-├── manifest.json      # Метаданные, права доступа, иконка
-├── index.tsx          # React-компонент модуля
-└── README.md          # Документация
+---
 
-Модули вкладок: machines · tools · drawings · files · gcode · calendar · defects · stats · log · customTemplate
+# 🔥 Firebase Integration
 
-Модули настроек: settings_telegram · settings_integrations · settings_notifications · settings_salary · settings_shifts · settings_appearance · settings_ai_agents · settings_backup · settings_snapshots · settings_gdrive · settings_cloudflare
+Supported:
 
-Модули упакованы в public/dop.zip и загружаются динамически.
-Управление через Настройки → Управление расширениями.
+- Firebase Authentication
+- Firestore Synchronization
+- Multi-user Collaboration
+- Real-time Updates
 
-🔥 Firebase
+The application remains fully functional offline using IndexedDB.
 
-Настройка
+---
 
-- Создайте проект: console.firebase.google.com
+# 🌐 API Reference
 
-- Включите Authentication → Email/Password
+## Core
 
-- Создайте Firestore Database
+| Method | Endpoint |
+|----------|----------|
+| GET | /api/health |
+| GET | /api/check-model |
+| GET | /api/available-models |
 
-- Скопируйте конфиг в firebase-applet-config.json
+---
 
-- Задеплойте правила: firebase deploy --only firestore:rules
+## AI Services
 
-Без Firebase
+| Method | Endpoint |
+|----------|----------|
+| POST | /api/chat |
+| POST | /api/agent-task |
+| POST | /api/generate-gcode |
+| POST | /api/recognize-drawing |
 
-Приложение работает полностью локально без Firebase — данные в IndexedDB.
-Firebase нужен только для синхронизации между несколькими устройствами.
+---
 
-Роли пользователей
+## Cache
 
-Роль
-Права
+| Method | Endpoint |
+|----------|----------|
+| GET | /api/cache/stats |
+| POST | /api/cache/clear |
 
-admin
-Полный доступ, управление пользователями
+---
 
-operator
-Мониторинг, ввод данных, журналы
+# 🔒 Security
 
-viewer
-Только просмотр
+- Firebase Authentication
+- Role-based access control
+- Firestore Security Rules
+- Offline-first architecture
+- Secure AI API proxy
+- HTTPS deployment support
 
-🌐 API Endpoints
+---
 
-Метод
-Путь
-Описание
+# 👥 User Roles
 
-GET
-/api/health
-Статус сервера и Gemini API
+| Role | Permissions |
+|--------|-------------|
+| admin | Full system access |
+| operator | Production operations |
+| viewer | Read-only |
 
-GET
-/api/check-model
-Проверка доступности Gemini-модели
+---
 
-GET
-/api/available-models
-Список доступных Gemini-моделей
+# 📈 Roadmap
 
-POST
-/api/recognize-drawing
-AI-распознавание чертежа (Gemini Vision)
+## Completed
 
-POST
-/api/generate-gcode
-Генерация G-кода через AI
+- ✅ CNC Monitoring
+- ✅ OEE Analytics
+- ✅ Shift Management
+- ✅ Tool Management
+- ✅ Firebase Sync
+- ✅ AI Drawing Recognition
+- ✅ G-Code Studio
 
-POST
-/api/chat
-Мультимодальный AI-чат
+## Planned
 
-POST
-/api/agent-task
-Выполнение задачи AI-субагентом
+- ⏳ Fanuc FOCAS Integration
+- ⏳ MTConnect Support
+- ⏳ OPC UA Connector
+- ⏳ Siemens SINUMERIK Integration
+- ⏳ MES Integration
+- ⏳ ERP Integration
+- ⏳ Android App
+- ⏳ iOS App
 
-GET
-/api/cache/stats
-Статистика сервер-кэша
+---
 
-POST
-/api/cache/clear
-Очистка кэша
+# 📝 License
 
-📝 Лицензия
+Private License.
 
-Проект является приватным. Все права защищены.
+All Rights Reserved.
+
+Unauthorized reproduction, distribution, or modification is prohibited.
+
+---
 
 <div align="center">
-<sub>Разработано для профессионального использования на производстве ЧПУ</sub>
+
+# ⚙️ CNC Plus Pro
+
+### Digital Manufacturing Ecosystem for CNC Production
+
+**Built for modern machine shops and manufacturing facilities.**
+
+⭐ Star this repository if you find it useful.
+
 </div>
