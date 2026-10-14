@@ -7,7 +7,7 @@
 Production-grade PWA platform for CNC machine monitoring, OEE analytics, workforce management, AI-powered drawing recognition, G-code development, and digital shop-floor operations.
 
 <p align="center">
-  <img src="docs/screenshots.png" alt="CNC Plus Pro Screenshots">
+  <img src="docs/screenshot.png" alt="CNC Plus Pro Screenshots">
 </p>
 
 <br>
